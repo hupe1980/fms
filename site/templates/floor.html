@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}{{ page.title }} — fms{% endblock title %}
+{% block content %}
+<main class="prose narrow" style="max-width:980px">
+  <h1>{{ page.title }}</h1>
+  <p class="lede">{{ page.description }}</p>
+  <form class="calc" id="calc" onsubmit="return false">
+    <fieldset>
+      <legend>Behind one Netzanschluss</legend>
+      <label>Heat pump(s), incl. Heizstab <span class="unit"><input type="number" id="hp" min="0" step="0.1" value="9"> kW</span></label>
+      <label>Second heat pump <span class="unit"><input type="number" id="hp2" min="0" step="0.1" value="0"> kW</span></label>
+      <label>Wallbox <span class="unit"><input type="number" id="wb" min="0" step="0.1" value="11"> kW</span></label>
+      <label>Second wallbox <span class="unit"><input type="number" id="wb2" min="0" step="0.1" value="0"> kW</span></label>
+      <label>Space cooling <span class="unit"><input type="number" id="cool" min="0" step="0.1" value="0"> kW</span></label>
+      <label>Storage (charging) <span class="unit"><input type="number" id="bat" min="0" step="0.1" value="0"> kW</span></label>
+      <div class="modes">
+        <label><input type="radio" name="mode" value="ems" checked> one EMS</label>
+        <label><input type="radio" name="mode" value="direct"> Direktansteuerung</label>
+      </div>
+    </fieldset>
+    <div class="result" aria-live="polite">
+      <div>Mindestleistung</div>
+      <div class="big" id="out">—</div>
+      <div class="how" id="how"></div>
+      <ul id="list"></ul>
+    </div>
+  </form>
+  <p class="selfcheck" id="selfcheck">Checking this page against the Rust engine…</p>
+  {{ page.content | safe }}
+</main>
+<script src="{{ get_url(path='js/floor.js') }}"></script>
+<script>fmsFloor.boot("{{ get_url(path='data/floor-vectors.json') }}");</script>
+{% endblock content %}

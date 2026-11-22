@@ -1,0 +1,46 @@
+[package]
+name = "fms"
+version = "0.2.0"
+edition = "2024"
+rust-version = "1.88"
+description = "A Flexibilitätsmanagementsystem in Rust: the DSO side of § 14a EnWG — grid state, floor-respecting reductions, dispatch tracking and a tamper-evident evidence log"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/hupe1980/fms"
+homepage = "https://hupe1980.github.io/fms"
+documentation = "https://docs.rs/fms"
+readme = "README.md"
+keywords = ["energy", "flexibility", "dso", "smart-grid", "enwg"]
+categories = ["science", "simulation", "command-line-utilities"]
+include = ["/src/**", "/README.md", "/CHANGELOG.md", "/LICENSE-MIT", "/LICENSE-APACHE"]
+
+[features]
+default = ["cli"]
+# The closed-loop simulator and the reference days.
+sim = []
+# The `fms` command-line tool.
+cli = ["sim", "dep:clap"]
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = { version = "1", features = ["float_roundtrip"] }
+sha2 = "0.10"
+jiff = { version = "0.2", default-features = false, features = ["std", "serde", "tzdb-bundle-always"] }
+clap = { version = "4", features = ["derive"], optional = true }
+
+[[bin]]
+name = "fms"
+path = "src/bin/fms.rs"
+required-features = ["cli"]
+
+[lints.rust]
+unsafe_code = "forbid"
+missing_docs = "warn"
+
+[lints.clippy]
+unwrap_used = "deny"
+expect_used = "deny"
+panic = "deny"
+indexing_slicing = "deny"
+
+[profile.release]
+lto = "thin"

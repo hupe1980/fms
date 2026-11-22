@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{{ config.title }} — the DSO side of § 14a{% endblock title %}</title>
+  <meta name="description" content="{% block description %}{{ config.description }}{% endblock description %}">
+  <link rel="icon" href="{{ get_url(path='favicon.svg') }}" type="image/svg+xml">
+  <link rel="stylesheet" href="{{ get_url(path='css/site.css') }}">
+  <link rel="stylesheet" href="{{ get_url(path='giallo-light.css') }}" media="(prefers-color-scheme: light)">
+  <link rel="stylesheet" href="{{ get_url(path='giallo-dark.css') }}" media="(prefers-color-scheme: dark)">
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="{{ get_url(path='/') }}"><img src="{{ get_url(path='favicon.svg') }}" alt="" width="22" height="22"> fms</a>
+    <nav>
+      <a href="{{ get_url(path='@/docs/getting-started.md') }}">Get started</a>
+      <a href="{{ get_url(path='@/docs/_index.md') }}">Docs</a>
+      <a href="{{ get_url(path='@/floor.md') }}">Floor calculator</a>
+      <a href="{{ config.extra.docs }}">API</a>
+      <a href="{{ config.extra.repo }}">GitHub</a>
+    </nav>
+  </header>
+  {% block content %}{% endblock content %}
+  <footer>
+    <p>fms is MIT or Apache-2.0. It is software, not legal advice: the rules it executes are cited to
+      BNetzA BK6-22-300 and the VDE FNN Hinweise, and a DSO remains responsible for its grid.</p>
+  </footer>
+</body>
+</html>

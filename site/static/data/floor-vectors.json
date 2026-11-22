@@ -1,0 +1,1154 @@
+[
+  {
+    "devices": [
+      {
+        "kind": "charging-point",
+        "kw": 4.2
+      }
+    ],
+    "floor": null,
+    "mode": "ems"
+  },
+  {
+    "devices": [
+      {
+        "kind": "cooling",
+        "kw": 7.0
+      }
+    ],
+    "floor": 4.2,
+    "mode": "ems"
+  },
+  {
+    "devices": [
+      {
+        "kind": "storage",
+        "kw": 11.0
+      }
+    ],
+    "floor": 4.2,
+    "mode": "ems"
+  },
+  {
+    "devices": [
+      {
+        "kind": "heat-pump",
+        "kw": 15.0
+      }
+    ],
+    "floor": 6.0,
+    "mode": "ems"
+  },
+  {
+    "devices": [
+      {
+        "kind": "charging-point",
+        "kw": 3.0
+      }
+    ],
+    "floor": null,
+    "mode": "ems"
+  },
+  {
+    "devices": [
+      {
+        "kind": "cooling",
+        "kw": 4.3
+      }
+    ],
+    "floor": 4.2,
+    "mode": "ems"
+  },
+  {
+    "devices": [
+      {
+        "kind": "storage",
+        "kw": 9.0
+      }
+    ],
+    "floor": 4.2,
+    "mode": "ems"
+  },
+  {
+    "devices": [
+      {
+        "kind": "heat-pump",
+        "kw": 12.0
+      }
+    ],
+    "floor": 4.8,
+    "mode": "ems"
+  },
+  {
+    "devices": [
+      {
+        "kind": "charging-point",
+        "kw": 22.0
+      }
+    ],
+    "floor": 4.2,
+    "mode": "ems"
+  },
+  {
+    "devices": [
+      {
+        "kind": "cooling",
+        "kw": 4.2
+      },
+      {
+        "kind": "charging-point",
+        "kw": 11.0
+      }
+    ],
+    "floor": 4.2,
+    "mode": "ems"
+  },
+  {
+    "devices": [
+      {
+        "kind": "storage",
+        "kw": 7.0
+      },
+      {
+        "kind": "cooling",
+        "kw": 15.0
+      }
+    ],
+    "floor": 9.36,
+    "mode": "ems"
+  },
+  {
+    "devices": [
+      {
+        "kind": "heat-pump",
+        "kw": 11.0
+      },
+      {
+        "kind": "storage",
+        "kw": 3.0
+      }
+    ],
+    "floor": 4.2,
+    "mode": "ems"
+  },
+  {
+    "devices": [
+      {
+        "kind": "charging-point",
+        "kw": 15.0
+      },
+      {
+        "kind": "heat-pump",
+        "kw": 4.3
+      }
+    ],
+    "floor": 7.56,
+    "mode": "ems"
+  },
+  {
+    "devices": [
+      {
+        "kind": "cooling",
+        "kw": 3.0
+      },
+      {
+        "kind": "charging-point",
+        "kw": 9.0
+      }
+    ],
+    "floor": 4.2,
+    "mode": "ems"
+  },
+  {
+    "devices": [
+      {
+        "kind": "storage",
+        "kw": 4.3
+      },
+      {
+        "kind": "cooling",
+        "kw": 12.0
+      }
+    ],
+    "floor": 8.16,
+    "mode": "ems"
+  },
+  {
+    "devices": [
+      {
+        "kind": "heat-pump",
+        "kw": 9.0
+      },
+      {
+        "kind": "storage",
+        "kw": 22.0
+      }
+    ],
+    "floor": 7.56,
+    "mode": "ems"
+  },
+  {
+    "devices": [
+      {
+        "kind": "charging-point",
+        "kw": 12.0
+      },
+      {
+        "kind": "heat-pump",
+        "kw": 4.2
+      }
+    ],
+    "floor": 4.2,
+    "mode": "ems"
+  },
+  {
+    "devices": [
+      {
+        "kind": "cooling",
+        "kw": 22.0
+      },
+      {
+        "kind": "charging-point",
+        "kw": 7.0
+      }
+    ],
+    "floor": 12.16,
+    "mode": "ems"
+  },
+  {
+    "devices": [
+      {
+        "kind": "storage",
+        "kw": 4.2
+      },
+      {
+        "kind": "cooling",
+        "kw": 11.0
+      },
+      {
+        "kind": "charging-point",
+        "kw": 3.0
+      }
+    ],
+    "floor": 4.2,
+    "mode": "ems"
+  },
+  {
+    "devices": [
+      {
+        "kind": "heat-pump",
+        "kw": 7.0
+      },
+      {
+        "kind": "storage",
+        "kw": 15.0
+      },
+      {
+        "kind": "cooling",
+        "kw": 4.3
+      }
+    ],
+    "floor": 10.5,
+    "mode": "ems"
+  },
+  {
+    "devices": [
+      {
+        "kind": "charging-point",
+        "kw": 11.0
+      },
+      {
+        "kind": "heat-pump",
+        "kw": 3.0
+      },
+      {
+        "kind": "storage",
+        "kw": 9.0
+      }
+    ],
+    "floor": 7.56,
+    "mode": "ems"
+  },
+  {
+    "devices": [
+      {
+        "kind": "cooling",
+        "kw": 15.0
+      },
+      {
+        "kind": "charging-point",
+        "kw": 4.3
+      },
+      {
+        "kind": "heat-pump",
+        "kw": 12.0
+      }
+    ],
+    "floor": 12.3,
+    "mode": "ems"
+  },
+  {
+    "devices": [
+      {
+        "kind": "storage",
+        "kw": 3.0
+      },
+      {
+        "kind": "cooling",
+        "kw": 9.0
+      },
+      {
+        "kind": "charging-point",
+        "kw": 22.0
+      }
+    ],
+    "floor": 7.56,
+    "mode": "ems"
+  },
+  {
+    "devices": [
+      {
+        "kind": "heat-pump",
+        "kw": 4.3
+      },
+      {
+        "kind": "storage",
+        "kw": 12.0
+      },
+      {
+        "kind": "cooling",
+        "kw": 4.2
+      }
+    ],
+    "floor": 7.56,
+    "mode": "ems"
+  },
+  {
+    "devices": [
+      {
+        "kind": "charging-point",
+        "kw": 9.0
+      },
+      {
+        "kind": "heat-pump",
+        "kw": 22.0
+      },
+      {
+        "kind": "storage",
+        "kw": 7.0
+      }
+    ],
+    "floor": 15.1,
+    "mode": "ems"
+  },
+  {
+    "devices": [
+      {
+        "kind": "cooling",
+        "kw": 12.0
+      },
+      {
+        "kind": "charging-point",
+        "kw": 4.2
+      },
+      {
+        "kind": "heat-pump",
+        "kw": 11.0
+      }
+    ],
+    "floor": 8.16,
+    "mode": "ems"
+  },
+  {
+    "devices": [
+      {
+        "kind": "storage",
+        "kw": 22.0
+      },
+      {
+        "kind": "cooling",
+        "kw": 7.0
+      },
+      {
+        "kind": "charging-point",
+        "kw": 15.0
+      }
+    ],
+    "floor": 10.5,
+    "mode": "ems"
+  },
+  {
+    "devices": [
+      {
+        "kind": "heat-pump",
+        "kw": 4.2
+      },
+      {
+        "kind": "storage",
+        "kw": 11.0
+      },
+      {
+        "kind": "cooling",
+        "kw": 3.0
+      },
+      {
+        "kind": "charging-point",
+        "kw": 9.0
+      }
+    ],
+    "floor": 7.56,
+    "mode": "ems"
+  },
+  {
+    "devices": [
+      {
+        "kind": "charging-point",
+        "kw": 7.0
+      },
+      {
+        "kind": "heat-pump",
+        "kw": 15.0
+      },
+      {
+        "kind": "storage",
+        "kw": 4.3
+      },
+      {
+        "kind": "cooling",
+        "kw": 12.0
+      }
+    ],
+    "floor": 14.82,
+    "mode": "ems"
+  },
+  {
+    "devices": [
+      {
+        "kind": "cooling",
+        "kw": 11.0
+      },
+      {
+        "kind": "charging-point",
+        "kw": 3.0
+      },
+      {
+        "kind": "heat-pump",
+        "kw": 9.0
+      },
+      {
+        "kind": "storage",
+        "kw": 22.0
+      }
+    ],
+    "floor": 10.5,
+    "mode": "ems"
+  },
+  {
+    "devices": [
+      {
+        "kind": "storage",
+        "kw": 15.0
+      },
+      {
+        "kind": "cooling",
+        "kw": 4.3
+      },
+      {
+        "kind": "charging-point",
+        "kw": 12.0
+      },
+      {
+        "kind": "heat-pump",
+        "kw": 4.2
+      }
+    ],
+    "floor": 10.5,
+    "mode": "ems"
+  },
+  {
+    "devices": [
+      {
+        "kind": "heat-pump",
+        "kw": 3.0
+      },
+      {
+        "kind": "storage",
+        "kw": 9.0
+      },
+      {
+        "kind": "cooling",
+        "kw": 22.0
+      },
+      {
+        "kind": "charging-point",
+        "kw": 7.0
+      }
+    ],
+    "floor": 15.1,
+    "mode": "ems"
+  },
+  {
+    "devices": [
+      {
+        "kind": "charging-point",
+        "kw": 4.3
+      },
+      {
+        "kind": "heat-pump",
+        "kw": 12.0
+      },
+      {
+        "kind": "storage",
+        "kw": 4.2
+      },
+      {
+        "kind": "cooling",
+        "kw": 11.0
+      }
+    ],
+    "floor": 11.1,
+    "mode": "ems"
+  },
+  {
+    "devices": [
+      {
+        "kind": "cooling",
+        "kw": 9.0
+      },
+      {
+        "kind": "charging-point",
+        "kw": 22.0
+      },
+      {
+        "kind": "heat-pump",
+        "kw": 7.0
+      },
+      {
+        "kind": "storage",
+        "kw": 15.0
+      }
+    ],
+    "floor": 13.02,
+    "mode": "ems"
+  },
+  {
+    "devices": [
+      {
+        "kind": "storage",
+        "kw": 12.0
+      },
+      {
+        "kind": "cooling",
+        "kw": 4.2
+      },
+      {
+        "kind": "charging-point",
+        "kw": 11.0
+      },
+      {
+        "kind": "heat-pump",
+        "kw": 3.0
+      }
+    ],
+    "floor": 7.56,
+    "mode": "ems"
+  },
+  {
+    "devices": [
+      {
+        "kind": "heat-pump",
+        "kw": 22.0
+      },
+      {
+        "kind": "storage",
+        "kw": 7.0
+      },
+      {
+        "kind": "cooling",
+        "kw": 15.0
+      },
+      {
+        "kind": "charging-point",
+        "kw": 4.3
+      }
+    ],
+    "floor": 17.62,
+    "mode": "ems"
+  },
+  {
+    "devices": [
+      {
+        "kind": "charging-point",
+        "kw": 4.2
+      }
+    ],
+    "floor": null,
+    "mode": "direct"
+  },
+  {
+    "devices": [
+      {
+        "kind": "cooling",
+        "kw": 7.0
+      }
+    ],
+    "floor": 4.2,
+    "mode": "direct"
+  },
+  {
+    "devices": [
+      {
+        "kind": "storage",
+        "kw": 11.0
+      }
+    ],
+    "floor": 4.2,
+    "mode": "direct"
+  },
+  {
+    "devices": [
+      {
+        "kind": "heat-pump",
+        "kw": 15.0
+      }
+    ],
+    "floor": 6.0,
+    "mode": "direct"
+  },
+  {
+    "devices": [
+      {
+        "kind": "charging-point",
+        "kw": 3.0
+      }
+    ],
+    "floor": null,
+    "mode": "direct"
+  },
+  {
+    "devices": [
+      {
+        "kind": "cooling",
+        "kw": 4.3
+      }
+    ],
+    "floor": 4.2,
+    "mode": "direct"
+  },
+  {
+    "devices": [
+      {
+        "kind": "storage",
+        "kw": 9.0
+      }
+    ],
+    "floor": 4.2,
+    "mode": "direct"
+  },
+  {
+    "devices": [
+      {
+        "kind": "heat-pump",
+        "kw": 12.0
+      }
+    ],
+    "floor": 4.8,
+    "mode": "direct"
+  },
+  {
+    "devices": [
+      {
+        "kind": "charging-point",
+        "kw": 22.0
+      }
+    ],
+    "floor": 4.2,
+    "mode": "direct"
+  },
+  {
+    "devices": [
+      {
+        "kind": "cooling",
+        "kw": 4.2
+      },
+      {
+        "kind": "charging-point",
+        "kw": 11.0
+      }
+    ],
+    "floor": 4.2,
+    "mode": "direct"
+  },
+  {
+    "devices": [
+      {
+        "kind": "storage",
+        "kw": 7.0
+      },
+      {
+        "kind": "cooling",
+        "kw": 15.0
+      }
+    ],
+    "floor": 10.2,
+    "mode": "direct"
+  },
+  {
+    "devices": [
+      {
+        "kind": "heat-pump",
+        "kw": 11.0
+      },
+      {
+        "kind": "storage",
+        "kw": 3.0
+      }
+    ],
+    "floor": 4.2,
+    "mode": "direct"
+  },
+  {
+    "devices": [
+      {
+        "kind": "charging-point",
+        "kw": 15.0
+      },
+      {
+        "kind": "heat-pump",
+        "kw": 4.3
+      }
+    ],
+    "floor": 8.4,
+    "mode": "direct"
+  },
+  {
+    "devices": [
+      {
+        "kind": "cooling",
+        "kw": 3.0
+      },
+      {
+        "kind": "charging-point",
+        "kw": 9.0
+      }
+    ],
+    "floor": 4.2,
+    "mode": "direct"
+  },
+  {
+    "devices": [
+      {
+        "kind": "storage",
+        "kw": 4.3
+      },
+      {
+        "kind": "cooling",
+        "kw": 12.0
+      }
+    ],
+    "floor": 9.0,
+    "mode": "direct"
+  },
+  {
+    "devices": [
+      {
+        "kind": "heat-pump",
+        "kw": 9.0
+      },
+      {
+        "kind": "storage",
+        "kw": 22.0
+      }
+    ],
+    "floor": 8.4,
+    "mode": "direct"
+  },
+  {
+    "devices": [
+      {
+        "kind": "charging-point",
+        "kw": 12.0
+      },
+      {
+        "kind": "heat-pump",
+        "kw": 4.2
+      }
+    ],
+    "floor": 4.2,
+    "mode": "direct"
+  },
+  {
+    "devices": [
+      {
+        "kind": "cooling",
+        "kw": 22.0
+      },
+      {
+        "kind": "charging-point",
+        "kw": 7.0
+      }
+    ],
+    "floor": 13.0,
+    "mode": "direct"
+  },
+  {
+    "devices": [
+      {
+        "kind": "storage",
+        "kw": 4.2
+      },
+      {
+        "kind": "cooling",
+        "kw": 11.0
+      },
+      {
+        "kind": "charging-point",
+        "kw": 3.0
+      }
+    ],
+    "floor": 4.2,
+    "mode": "direct"
+  },
+  {
+    "devices": [
+      {
+        "kind": "heat-pump",
+        "kw": 7.0
+      },
+      {
+        "kind": "storage",
+        "kw": 15.0
+      },
+      {
+        "kind": "cooling",
+        "kw": 4.3
+      }
+    ],
+    "floor": 12.6,
+    "mode": "direct"
+  },
+  {
+    "devices": [
+      {
+        "kind": "charging-point",
+        "kw": 11.0
+      },
+      {
+        "kind": "heat-pump",
+        "kw": 3.0
+      },
+      {
+        "kind": "storage",
+        "kw": 9.0
+      }
+    ],
+    "floor": 8.4,
+    "mode": "direct"
+  },
+  {
+    "devices": [
+      {
+        "kind": "cooling",
+        "kw": 15.0
+      },
+      {
+        "kind": "charging-point",
+        "kw": 4.3
+      },
+      {
+        "kind": "heat-pump",
+        "kw": 12.0
+      }
+    ],
+    "floor": 15.0,
+    "mode": "direct"
+  },
+  {
+    "devices": [
+      {
+        "kind": "storage",
+        "kw": 3.0
+      },
+      {
+        "kind": "cooling",
+        "kw": 9.0
+      },
+      {
+        "kind": "charging-point",
+        "kw": 22.0
+      }
+    ],
+    "floor": 8.4,
+    "mode": "direct"
+  },
+  {
+    "devices": [
+      {
+        "kind": "heat-pump",
+        "kw": 4.3
+      },
+      {
+        "kind": "storage",
+        "kw": 12.0
+      },
+      {
+        "kind": "cooling",
+        "kw": 4.2
+      }
+    ],
+    "floor": 8.4,
+    "mode": "direct"
+  },
+  {
+    "devices": [
+      {
+        "kind": "charging-point",
+        "kw": 9.0
+      },
+      {
+        "kind": "heat-pump",
+        "kw": 22.0
+      },
+      {
+        "kind": "storage",
+        "kw": 7.0
+      }
+    ],
+    "floor": 17.2,
+    "mode": "direct"
+  },
+  {
+    "devices": [
+      {
+        "kind": "cooling",
+        "kw": 12.0
+      },
+      {
+        "kind": "charging-point",
+        "kw": 4.2
+      },
+      {
+        "kind": "heat-pump",
+        "kw": 11.0
+      }
+    ],
+    "floor": 9.0,
+    "mode": "direct"
+  },
+  {
+    "devices": [
+      {
+        "kind": "storage",
+        "kw": 22.0
+      },
+      {
+        "kind": "cooling",
+        "kw": 7.0
+      },
+      {
+        "kind": "charging-point",
+        "kw": 15.0
+      }
+    ],
+    "floor": 12.6,
+    "mode": "direct"
+  },
+  {
+    "devices": [
+      {
+        "kind": "heat-pump",
+        "kw": 4.2
+      },
+      {
+        "kind": "storage",
+        "kw": 11.0
+      },
+      {
+        "kind": "cooling",
+        "kw": 3.0
+      },
+      {
+        "kind": "charging-point",
+        "kw": 9.0
+      }
+    ],
+    "floor": 8.4,
+    "mode": "direct"
+  },
+  {
+    "devices": [
+      {
+        "kind": "charging-point",
+        "kw": 7.0
+      },
+      {
+        "kind": "heat-pump",
+        "kw": 15.0
+      },
+      {
+        "kind": "storage",
+        "kw": 4.3
+      },
+      {
+        "kind": "cooling",
+        "kw": 12.0
+      }
+    ],
+    "floor": 19.2,
+    "mode": "direct"
+  },
+  {
+    "devices": [
+      {
+        "kind": "cooling",
+        "kw": 11.0
+      },
+      {
+        "kind": "charging-point",
+        "kw": 3.0
+      },
+      {
+        "kind": "heat-pump",
+        "kw": 9.0
+      },
+      {
+        "kind": "storage",
+        "kw": 22.0
+      }
+    ],
+    "floor": 12.6,
+    "mode": "direct"
+  },
+  {
+    "devices": [
+      {
+        "kind": "storage",
+        "kw": 15.0
+      },
+      {
+        "kind": "cooling",
+        "kw": 4.3
+      },
+      {
+        "kind": "charging-point",
+        "kw": 12.0
+      },
+      {
+        "kind": "heat-pump",
+        "kw": 4.2
+      }
+    ],
+    "floor": 12.6,
+    "mode": "direct"
+  },
+  {
+    "devices": [
+      {
+        "kind": "heat-pump",
+        "kw": 3.0
+      },
+      {
+        "kind": "storage",
+        "kw": 9.0
+      },
+      {
+        "kind": "cooling",
+        "kw": 22.0
+      },
+      {
+        "kind": "charging-point",
+        "kw": 7.0
+      }
+    ],
+    "floor": 17.2,
+    "mode": "direct"
+  },
+  {
+    "devices": [
+      {
+        "kind": "charging-point",
+        "kw": 4.3
+      },
+      {
+        "kind": "heat-pump",
+        "kw": 12.0
+      },
+      {
+        "kind": "storage",
+        "kw": 4.2
+      },
+      {
+        "kind": "cooling",
+        "kw": 11.0
+      }
+    ],
+    "floor": 13.2,
+    "mode": "direct"
+  },
+  {
+    "devices": [
+      {
+        "kind": "cooling",
+        "kw": 9.0
+      },
+      {
+        "kind": "charging-point",
+        "kw": 22.0
+      },
+      {
+        "kind": "heat-pump",
+        "kw": 7.0
+      },
+      {
+        "kind": "storage",
+        "kw": 15.0
+      }
+    ],
+    "floor": 16.8,
+    "mode": "direct"
+  },
+  {
+    "devices": [
+      {
+        "kind": "storage",
+        "kw": 12.0
+      },
+      {
+        "kind": "cooling",
+        "kw": 4.2
+      },
+      {
+        "kind": "charging-point",
+        "kw": 11.0
+      },
+      {
+        "kind": "heat-pump",
+        "kw": 3.0
+      }
+    ],
+    "floor": 8.4,
+    "mode": "direct"
+  },
+  {
+    "devices": [
+      {
+        "kind": "heat-pump",
+        "kw": 22.0
+      },
+      {
+        "kind": "storage",
+        "kw": 7.0
+      },
+      {
+        "kind": "cooling",
+        "kw": 15.0
+      },
+      {
+        "kind": "charging-point",
+        "kw": 4.3
+      }
+    ],
+    "floor": 23.2,
+    "mode": "direct"
+  }
+]

@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+{% block content %}
+{% set r = load_data(path="static/data/cold-snap.json") %}
+{% set days = load_data(path="static/data/days.json") %}
+<section class="hero">
+  <div>
+    <h1>The grid operator's side of <em>§ 14a</em>.</h1>
+    <p>fms decides when a heat pump or a wallbox may be curtailed — only when the grid state is
+      determined, never below the Mindestleistung, the same depth for everyone, stepwise back —
+      and keeps the proof. A Flexibilitätsmanagementsystem in Rust, open source.</p>
+    <div class="cta">
+      <a class="btn" href="{{ get_url(path='@/docs/getting-started.md') }}">Run a day in one command</a>
+      <a class="btn ghost" href="{{ get_url(path='@/floor.md') }}">Compute a floor</a>
+      <span class="install">brew install hupe1980/tap/fms</span>
+    </div>
+  </div>
+  <figure class="chart" aria-label="Transformer loading on the cold-snap reference day">
+    <h2>{{ r.title }}</h2>
+    <p class="sub">Transformer loading, {{ r.households }} households, seed {{ r.seed }} — the same day with and without fms</p>
+    {% set top = 160 %}{% set h = 300 %}{% set dx = 6.2 %}
+    {% set_global without = "0," ~ h %}{% set_global with = "" %}{% set_global believed = "" %}
+    {% for p in r.series %}
+      {% set x = loop.index0 * dx %}
+      {% set_global without = without ~ " " ~ x ~ "," ~ (h - p.without / top * h) %}
+      {% set_global with = with ~ " " ~ x ~ "," ~ (h - p.with / top * h) %}
+      {% if p.believed %}{% set_global believed = believed ~ " " ~ x ~ "," ~ (h - p.believed / top * h) %}{% endif %}
+    {% endfor %}
+    {% set right = 95 * dx %}
+    <svg viewBox="-52 -10 676 340" role="img">
+      {% for pct in [0, 50, 100, 150] %}
+        {% set y = h - pct / top * h %}
+        <line class="axis" x1="0" x2="{{ right }}" y1="{{ y }}" y2="{{ y }}"/>
+        <text class="axis-label" x="-8" y="{{ y + 4 }}" text-anchor="end">{{ pct }}%</text>
+      {% endfor %}
+      <polygon class="area-without" points="{{ without }} {{ right }},{{ h }}"/>
+      <polygon class="area-with" points="0,{{ h }} {{ with }} {{ right }},{{ h }}"/>
+      <polyline class="line-with" points="{{ with }}"/>
+      <polyline class="line-believed" points="{{ believed }}"/>
+       <line class="limit" x1="0" x2="{{ right }}" y1="{{ h - 100 / top * h }}" y2="{{ h - 100 / top * h }}"/>
+      {% for hh in [0, 6, 12, 18, 24] %}<text class="axis-label" x="{{ hh * 4 * dx * 0.99 }}" y="{{ h + 20 }}" text-anchor="middle">{{ hh }}:00</text>{% endfor %}
+    </svg>
+    <div class="legend">
+      <span><i class="sw" style="background:var(--without)"></i>without fms</span>
+      <span><i class="sw" style="background:var(--with)"></i>with fms</span>
+      <span><i class="sw" style="background:var(--believed)"></i>what fms believed</span>
+      <span><i class="sw" style="background:var(--bad)"></i>rating</span>
+    </div>
+  </figure>
+</section>
+
+<div class="stats">
+  <div class="stat"><b>{{ r.without.congested_minutes | int }} → <span class="ok">{{ r.with.congested_minutes | int }}</span></b><span>minutes above a rating</span></div>
+  <div class="stat"><b>{{ r.without.peak_loading_percent | round | int }} → {{ r.with.peak_loading_percent | round | int }} %</b><span>peak transformer loading</span></div>
+  <div class="stat"><b class="ok">{{ r.floor_violations + r.below_minimum }}</b><span>limits below a floor, on every day and seed</span></div>
+  <div class="stat"><b>{{ r.estimator_mae_kw }} kW</b><span>estimator error at {{ (r.metered_share * 100) | round | int }} % metering</span></div>
+</div>
+
+<section class="section">
+  <h2>What it does</h2>
+  <p>Four planes over one sans-IO core: the same engine runs in a service, inside an ADMS, or in the simulator at a hundred times real time.</p>
+  <div class="grid3">
+    <div class="feature"><h3>Knows the grid</h3><p>A Gaussian posterior over every connection: smart meters, the transformer and LV feeders at the Ortsnetzstation, profiles for the rest — with losses, within 0.03 % of pandapower's AC flow.</p><span class="src">FNN Hinweis 2e</span></div>
+    <div class="feature"><h3>Acts only when sure</h3><p>A reduction starts when the estimate is determined — P99 error within 10 % of the rating — and crosses the trigger. A spoofed RTU is refused as bad data.</p><span class="src">Ziff. 2.6, 4.1 · FNN 2c</span></div>
+    <div class="feature"><h3>Never below the floor</h3><p>The Mindestleistung is in the type: no constructor makes a limit below it. When the floors are not enough, fms says how many kW are missing.</p><span class="src">Ziff. 4.5</span></div>
+    <div class="feature"><h3>The same for everyone</h3><p>Every SteuVE drawn on gets the same depth above its own floor, across the Netzbereich — and the depth comes back one 15-minute step at a time.</p><span class="src">Ziff. 4.3</span></div>
+    <div class="feature"><h3>Knows what is in effect</h3><p>Commanded, confirmed, failsafe, unknown: planning uses what the Steuerbox actually does, including its failsafe after a lost channel and its lapse.</p><span class="src">FNN Hinweis 2a</span></div>
+    <div class="feature"><h3>Proves it</h3><p>A SHA-256-chained log with a reason on every command. The customer's documentation and the monthly VNBdigital row are computed from it alone.</p><span class="src">Ziff. 7, 8.4 · BDEW v1.0</span></div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Seven reference days</h2>
+  <p>Each runs twice on the same seed, against a hidden feeder the FMS only sees through its meters. <code>fms sim all</code> prints this table.</p>
+  <table>
+    <thead><tr><th>Day</th><th>What happens</th><th>Congested min</th><th>Peak %</th><th>Households reduced</th><th>Below floor</th></tr></thead>
+    <tbody>
+    {% for d in days %}
+      <tr><td><code>{{ d.day }}</code></td><td>{{ d.title }}</td>
+        <td class="num">{{ d.without.congested_minutes | int }} → <span class="{% if d.with.congested_minutes == 0 %}good{% else %}warn{% endif %}">{{ d.with.congested_minutes | int }}</span></td>
+        <td class="num">{{ d.without.peak_loading_percent | round | int }} → {{ d.with.peak_loading_percent | round | int }}</td>
+        <td class="num">{{ d.households_reduced }} / {{ d.households }}</td>
+        <td class="num good">{{ d.floor_violations + d.below_minimum }}</td></tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</section>
+
+<section class="section">
+  <h2>Where it sits</h2>
+  <p>fms decides; the Messstellenbetreiber carries; the Steuerbox applies; the household's energy manager distributes.</p>
+  <div class="chain">
+    <span>fms (DSO)</span><i>→ BDEW API →</i><span>MSB</span><i>→ IEC 61850 via SMGW →</i><span>Steuerbox</span><i>→ EEBUS LPC · relay →</i><span>EMS (e.g. hems)</span><i>→</i><span>heat pump · wallbox</span>
+  </div>
+</section>
+{% endblock content %}

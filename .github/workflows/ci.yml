@@ -1,0 +1,74 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  # The release workflow runs this file as its gate rather than copying it.
+  workflow_call:
+
+permissions:
+  contents: read
+
+env:
+  CARGO_TERM_COLOR: always
+  RUSTFLAGS: -D warnings
+
+jobs:
+  check:
+    name: fmt · clippy · test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt, clippy
+      - uses: Swatinem/rust-cache@v2
+      - run: cargo fmt --all --check
+      - run: cargo clippy --all-targets --all-features -- -D warnings
+      # Release mode: the reference days run four seeds each.
+      - run: cargo test --release --all-features
+      - run: cargo test --release --no-default-features --lib
+      - name: The core stays pure (no I/O, no clock, no unsafe)
+        run: |
+          for m in units time model rules grid state command engine dispatch evidence; do
+            if grep -n -E 'SystemTime::now|Instant::now|Timestamp::now|Zoned::now|std::(fs|env|net|process|thread)|\bunsafe\b' "src/$m.rs" | grep -vE ':[[:space:]]*(///|//!|//)'; then
+              echo "::error file=src/$m.rs::the core reached for ambient state"; exit 1
+            fi
+          done
+      - name: API docs build without warnings
+        run: cargo doc --no-deps --all-features
+        env:
+          RUSTDOCFLAGS: -D warnings
+
+  oracle:
+    name: pandapower oracle
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pandapower
+      # Absence of pandapower is a failure here, not a skip.
+      - run: cargo test --release --test pandapower_oracle -- --nocapture
+        env:
+          FMS_REQUIRE_PANDAPOWER: "1"
+          FMS_PYTHON: python
+
+  msrv:
+    name: MSRV 1.88
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@1.88
+      - run: cargo check --all-features
+
+  deny:
+    name: cargo deny
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: EmbarkStudios/cargo-deny-action@v2

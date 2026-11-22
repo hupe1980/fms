@@ -1,0 +1,741 @@
+{
+  "alarms": {
+    "deferred": 7
+  },
+  "below_minimum": 0,
+  "commands": {
+    "relieve": 81,
+    "renew": 177,
+    "restore": 150
+  },
+  "coverage_95": 1.0,
+  "curtailed_kwh": 513.2,
+  "date": "2026-01-15",
+  "day": "cold-snap",
+  "estimator_mae_kw": 0.4,
+  "floor_violations": 0,
+  "head": "77aa8ae6a51408662c6ed9bedcb0996447b6f03768d8dcb70c904fb322df6742",
+  "households": 96,
+  "households_reduced": 54,
+  "metered_share": 0.3,
+  "ons": "transformer",
+  "publication": [
+    {
+      "area": "NB-34117-0042",
+      "completion": null,
+      "hours": 4.58,
+      "intensity_percent": 0.24,
+      "measure": "keine-massnahme",
+      "postcodes": [
+        "34117",
+        "34119"
+      ],
+      "regime": "netzorientiert",
+      "steuve": 76
+    }
+  ],
+  "records": 1353,
+  "rejected": 0,
+  "releases": 54,
+  "required_share": 0.3,
+  "retries": 15,
+  "rule_set": "bk6-22-300/netzorientiert",
+  "seed": 1,
+  "series": [
+    {
+      "believed": 28.7,
+      "reduced": 0,
+      "time": "00:00",
+      "with": 28.7,
+      "without": 28.7
+    },
+    {
+      "believed": 28.8,
+      "reduced": 0,
+      "time": "00:15",
+      "with": 28.7,
+      "without": 28.7
+    },
+    {
+      "believed": 28.7,
+      "reduced": 0,
+      "time": "00:30",
+      "with": 28.8,
+      "without": 28.8
+    },
+    {
+      "believed": 28.5,
+      "reduced": 0,
+      "time": "00:45",
+      "with": 28.8,
+      "without": 28.8
+    },
+    {
+      "believed": 29.1,
+      "reduced": 0,
+      "time": "01:00",
+      "with": 28.7,
+      "without": 28.7
+    },
+    {
+      "believed": 28.5,
+      "reduced": 0,
+      "time": "01:15",
+      "with": 28.8,
+      "without": 28.8
+    },
+    {
+      "believed": 28.9,
+      "reduced": 0,
+      "time": "01:30",
+      "with": 28.6,
+      "without": 28.6
+    },
+    {
+      "believed": 28.9,
+      "reduced": 0,
+      "time": "01:45",
+      "with": 28.8,
+      "without": 28.8
+    },
+    {
+      "believed": 29.1,
+      "reduced": 0,
+      "time": "02:00",
+      "with": 29.0,
+      "without": 29.0
+    },
+    {
+      "believed": 28.6,
+      "reduced": 0,
+      "time": "02:15",
+      "with": 28.7,
+      "without": 28.7
+    },
+    {
+      "believed": 28.7,
+      "reduced": 0,
+      "time": "02:30",
+      "with": 29.0,
+      "without": 29.0
+    },
+    {
+      "believed": 28.9,
+      "reduced": 0,
+      "time": "02:45",
+      "with": 29.2,
+      "without": 29.2
+    },
+    {
+      "believed": 29.1,
+      "reduced": 0,
+      "time": "03:00",
+      "with": 28.6,
+      "without": 28.6
+    },
+    {
+      "believed": 29.0,
+      "reduced": 0,
+      "time": "03:15",
+      "with": 28.3,
+      "without": 28.3
+    },
+    {
+      "believed": 29.2,
+      "reduced": 0,
+      "time": "03:30",
+      "with": 28.9,
+      "without": 28.9
+    },
+    {
+      "believed": 28.8,
+      "reduced": 0,
+      "time": "03:45",
+      "with": 28.9,
+      "without": 28.9
+    },
+    {
+      "believed": 29.0,
+      "reduced": 0,
+      "time": "04:00",
+      "with": 28.9,
+      "without": 28.9
+    },
+    {
+      "believed": 29.1,
+      "reduced": 0,
+      "time": "04:15",
+      "with": 29.1,
+      "without": 29.1
+    },
+    {
+      "believed": 29.8,
+      "reduced": 0,
+      "time": "04:30",
+      "with": 29.9,
+      "without": 29.9
+    },
+    {
+      "believed": 30.0,
+      "reduced": 0,
+      "time": "04:45",
+      "with": 30.2,
+      "without": 30.2
+    },
+    {
+      "believed": 31.0,
+      "reduced": 0,
+      "time": "05:00",
+      "with": 31.4,
+      "without": 31.4
+    },
+    {
+      "believed": 32.1,
+      "reduced": 0,
+      "time": "05:15",
+      "with": 32.5,
+      "without": 32.5
+    },
+    {
+      "believed": 33.7,
+      "reduced": 0,
+      "time": "05:30",
+      "with": 34.6,
+      "without": 34.6
+    },
+    {
+      "believed": 35.7,
+      "reduced": 0,
+      "time": "05:45",
+      "with": 37.2,
+      "without": 37.2
+    },
+    {
+      "believed": 39.3,
+      "reduced": 0,
+      "time": "06:00",
+      "with": 39.8,
+      "without": 39.8
+    },
+    {
+      "believed": 42.5,
+      "reduced": 0,
+      "time": "06:15",
+      "with": 42.9,
+      "without": 42.9
+    },
+    {
+      "believed": 45.1,
+      "reduced": 0,
+      "time": "06:30",
+      "with": 45.9,
+      "without": 45.9
+    },
+    {
+      "believed": 48.4,
+      "reduced": 0,
+      "time": "06:45",
+      "with": 48.3,
+      "without": 48.3
+    },
+    {
+      "believed": 50.0,
+      "reduced": 0,
+      "time": "07:00",
+      "with": 50.7,
+      "without": 50.7
+    },
+    {
+      "believed": 51.2,
+      "reduced": 0,
+      "time": "07:15",
+      "with": 51.8,
+      "without": 51.8
+    },
+    {
+      "believed": 51.8,
+      "reduced": 0,
+      "time": "07:30",
+      "with": 50.8,
+      "without": 50.8
+    },
+    {
+      "believed": 50.3,
+      "reduced": 0,
+      "time": "07:45",
+      "with": 49.3,
+      "without": 49.3
+    },
+    {
+      "believed": 47.7,
+      "reduced": 0,
+      "time": "08:00",
+      "with": 46.5,
+      "without": 46.5
+    },
+    {
+      "believed": 44.0,
+      "reduced": 0,
+      "time": "08:15",
+      "with": 42.3,
+      "without": 42.3
+    },
+    {
+      "believed": 39.6,
+      "reduced": 0,
+      "time": "08:30",
+      "with": 38.2,
+      "without": 38.2
+    },
+    {
+      "believed": 35.2,
+      "reduced": 0,
+      "time": "08:45",
+      "with": 34.4,
+      "without": 34.4
+    },
+    {
+      "believed": 32.5,
+      "reduced": 0,
+      "time": "09:00",
+      "with": 31.0,
+      "without": 31.0
+    },
+    {
+      "believed": 30.0,
+      "reduced": 0,
+      "time": "09:15",
+      "with": 28.7,
+      "without": 28.7
+    },
+    {
+      "believed": 27.4,
+      "reduced": 0,
+      "time": "09:30",
+      "with": 27.1,
+      "without": 27.1
+    },
+    {
+      "believed": 26.0,
+      "reduced": 0,
+      "time": "09:45",
+      "with": 25.5,
+      "without": 25.5
+    },
+    {
+      "believed": 25.3,
+      "reduced": 0,
+      "time": "10:00",
+      "with": 24.8,
+      "without": 24.8
+    },
+    {
+      "believed": 24.1,
+      "reduced": 0,
+      "time": "10:15",
+      "with": 24.2,
+      "without": 24.2
+    },
+    {
+      "believed": 23.9,
+      "reduced": 0,
+      "time": "10:30",
+      "with": 24.4,
+      "without": 24.4
+    },
+    {
+      "believed": 24.0,
+      "reduced": 0,
+      "time": "10:45",
+      "with": 24.3,
+      "without": 24.3
+    },
+    {
+      "believed": 24.3,
+      "reduced": 0,
+      "time": "11:00",
+      "with": 24.7,
+      "without": 24.7
+    },
+    {
+      "believed": 24.4,
+      "reduced": 0,
+      "time": "11:15",
+      "with": 24.6,
+      "without": 24.6
+    },
+    {
+      "believed": 25.1,
+      "reduced": 0,
+      "time": "11:30",
+      "with": 24.9,
+      "without": 24.9
+    },
+    {
+      "believed": 24.9,
+      "reduced": 0,
+      "time": "11:45",
+      "with": 25.1,
+      "without": 25.1
+    },
+    {
+      "believed": 25.3,
+      "reduced": 0,
+      "time": "12:00",
+      "with": 25.2,
+      "without": 25.2
+    },
+    {
+      "believed": 25.6,
+      "reduced": 0,
+      "time": "12:15",
+      "with": 25.6,
+      "without": 25.6
+    },
+    {
+      "believed": 25.7,
+      "reduced": 0,
+      "time": "12:30",
+      "with": 26.0,
+      "without": 26.0
+    },
+    {
+      "believed": 25.9,
+      "reduced": 0,
+      "time": "12:45",
+      "with": 26.0,
+      "without": 26.0
+    },
+    {
+      "believed": 26.2,
+      "reduced": 0,
+      "time": "13:00",
+      "with": 25.7,
+      "without": 25.7
+    },
+    {
+      "believed": 25.8,
+      "reduced": 0,
+      "time": "13:15",
+      "with": 25.8,
+      "without": 25.8
+    },
+    {
+      "believed": 25.4,
+      "reduced": 0,
+      "time": "13:30",
+      "with": 25.7,
+      "without": 25.7
+    },
+    {
+      "believed": 25.3,
+      "reduced": 0,
+      "time": "13:45",
+      "with": 25.1,
+      "without": 25.1
+    },
+    {
+      "believed": 25.3,
+      "reduced": 0,
+      "time": "14:00",
+      "with": 25.6,
+      "without": 25.6
+    },
+    {
+      "believed": 25.5,
+      "reduced": 0,
+      "time": "14:15",
+      "with": 25.3,
+      "without": 25.3
+    },
+    {
+      "believed": 25.8,
+      "reduced": 0,
+      "time": "14:30",
+      "with": 25.9,
+      "without": 25.9
+    },
+    {
+      "believed": 26.4,
+      "reduced": 0,
+      "time": "14:45",
+      "with": 26.6,
+      "without": 26.6
+    },
+    {
+      "believed": 27.5,
+      "reduced": 0,
+      "time": "15:00",
+      "with": 27.6,
+      "without": 27.6
+    },
+    {
+      "believed": 28.3,
+      "reduced": 0,
+      "time": "15:15",
+      "with": 29.0,
+      "without": 29.0
+    },
+    {
+      "believed": 30.3,
+      "reduced": 0,
+      "time": "15:30",
+      "with": 31.3,
+      "without": 31.3
+    },
+    {
+      "believed": 32.6,
+      "reduced": 0,
+      "time": "15:45",
+      "with": 33.5,
+      "without": 33.5
+    },
+    {
+      "believed": 35.4,
+      "reduced": 0,
+      "time": "16:00",
+      "with": 36.6,
+      "without": 36.6
+    },
+    {
+      "believed": 39.8,
+      "reduced": 0,
+      "time": "16:15",
+      "with": 40.9,
+      "without": 40.9
+    },
+    {
+      "believed": 43.8,
+      "reduced": 0,
+      "time": "16:30",
+      "with": 45.1,
+      "without": 45.1
+    },
+    {
+      "believed": 51.6,
+      "reduced": 0,
+      "time": "16:45",
+      "with": 56.4,
+      "without": 56.4
+    },
+    {
+      "believed": 61.9,
+      "reduced": 0,
+      "time": "17:00",
+      "with": 63.5,
+      "without": 63.5
+    },
+    {
+      "believed": 72.6,
+      "reduced": 0,
+      "time": "17:15",
+      "with": 73.7,
+      "without": 73.7
+    },
+    {
+      "believed": 76.5,
+      "reduced": 0,
+      "time": "17:30",
+      "with": 78.8,
+      "without": 78.8
+    },
+    {
+      "believed": 84.3,
+      "reduced": 0,
+      "time": "17:45",
+      "with": 88.2,
+      "without": 88.2
+    },
+    {
+      "believed": 92.9,
+      "reduced": 25,
+      "time": "18:00",
+      "with": 81.2,
+      "without": 97.3
+    },
+    {
+      "believed": 81.1,
+      "reduced": 54,
+      "time": "18:15",
+      "with": 82.7,
+      "without": 111.3
+    },
+    {
+      "believed": 83.8,
+      "reduced": 54,
+      "time": "18:30",
+      "with": 87.1,
+      "without": 118.4
+    },
+    {
+      "believed": 87.3,
+      "reduced": 54,
+      "time": "18:45",
+      "with": 88.8,
+      "without": 118.6
+    },
+    {
+      "believed": 90.6,
+      "reduced": 54,
+      "time": "19:00",
+      "with": 91.5,
+      "without": 123.3
+    },
+    {
+      "believed": 91.4,
+      "reduced": 54,
+      "time": "19:15",
+      "with": 91.0,
+      "without": 119.8
+    },
+    {
+      "believed": 89.8,
+      "reduced": 54,
+      "time": "19:30",
+      "with": 90.3,
+      "without": 116.9
+    },
+    {
+      "believed": 90.6,
+      "reduced": 54,
+      "time": "19:45",
+      "with": 90.4,
+      "without": 109.3
+    },
+    {
+      "believed": 89.7,
+      "reduced": 54,
+      "time": "20:00",
+      "with": 92.7,
+      "without": 112.3
+    },
+    {
+      "believed": 91.3,
+      "reduced": 54,
+      "time": "20:15",
+      "with": 89.2,
+      "without": 100.9
+    },
+    {
+      "believed": 87.3,
+      "reduced": 54,
+      "time": "20:30",
+      "with": 86.5,
+      "without": 88.8
+    },
+    {
+      "believed": 84.8,
+      "reduced": 54,
+      "time": "20:45",
+      "with": 83.3,
+      "without": 78.1
+    },
+    {
+      "believed": 80.1,
+      "reduced": 54,
+      "time": "21:00",
+      "with": 74.2,
+      "without": 65.2
+    },
+    {
+      "believed": 85.0,
+      "reduced": 54,
+      "time": "21:15",
+      "with": 68.3,
+      "without": 59.6
+    },
+    {
+      "believed": 79.5,
+      "reduced": 49,
+      "time": "21:30",
+      "with": 76.3,
+      "without": 53.9
+    },
+    {
+      "believed": 72.7,
+      "reduced": 49,
+      "time": "21:45",
+      "with": 73.7,
+      "without": 45.7
+    },
+    {
+      "believed": 68.2,
+      "reduced": 49,
+      "time": "22:00",
+      "with": 67.8,
+      "without": 40.7
+    },
+    {
+      "believed": 63.2,
+      "reduced": 49,
+      "time": "22:15",
+      "with": 58.2,
+      "without": 36.6
+    },
+    {
+      "believed": 53.3,
+      "reduced": 22,
+      "time": "22:30",
+      "with": 50.2,
+      "without": 35.4
+    },
+    {
+      "believed": 40.3,
+      "reduced": 0,
+      "time": "22:45",
+      "with": 39.9,
+      "without": 31.8
+    },
+    {
+      "believed": 35.5,
+      "reduced": 0,
+      "time": "23:00",
+      "with": 33.5,
+      "without": 30.4
+    },
+    {
+      "believed": 30.6,
+      "reduced": 0,
+      "time": "23:15",
+      "with": 30.4,
+      "without": 30.0
+    },
+    {
+      "believed": 29.8,
+      "reduced": 0,
+      "time": "23:30",
+      "with": 29.9,
+      "without": 29.6
+    },
+    {
+      "believed": 29.6,
+      "reduced": 0,
+      "time": "23:45",
+      "with": 29.4,
+      "without": 29.3
+    }
+  ],
+  "steuve": 76,
+  "story": "−12 °C. From late afternoon the heat pumps and their heating elements run flat out and the 400 kVA transformer goes above its rating. 30 % of the households have a smart meter gateway and the Ortsnetzstation measures the transformer.",
+  "title": "January cold snap: heat pumps overload the transformer",
+  "truth": {
+    "hours": 4.58,
+    "intensity_percent": 0.24,
+    "steuve": 76
+  },
+  "with": {
+    "congested_minutes": 0.0,
+    "ev_unserved_kwh": 0.0,
+    "min_voltage": 0.97,
+    "peak_asset": "T1",
+    "peak_loading_percent": 92.8
+  },
+  "without": {
+    "congested_minutes": 135.0,
+    "ev_unserved_kwh": 0.0,
+    "min_voltage": 0.965,
+    "peak_asset": "T1",
+    "peak_loading_percent": 125.3
+  },
+  "worst_household_kwh": 31.8
+}
